@@ -188,6 +188,10 @@ class ShareButton extends ShareUtils {
     this._addClass(button, `networks-${this.config.enabledNetworks}`);
     label.addEventListener('click', () => this._eventToggle(button, label));
 
+    // TODO: find the ideal time or replace?
+    if(this.config.ui.collision)
+      window.setTimeout(() => this._collisionDetection(button, label), 500);
+
     // Add listener to activate networks and close button
     for (let k in Object.keys(networks)) {
       let network = networks[k];
