@@ -68,6 +68,7 @@ body {
 share-button {
   animation-name: test;
   animation-duration: 12s;
+  animation-delay: 1s;
   left: calc(50% - 45px);
   top: calc(50% - 10px);
 }

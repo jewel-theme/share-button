@@ -204,7 +204,8 @@ class ShareButton extends ShareUtils {
       }
     }
     // For animation only
-    this._eventToggle(button);
+    window.setTimeout(() => this._eventToggle(button), 2000);
+
   }
 
   /**

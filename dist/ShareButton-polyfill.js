@@ -622,7 +622,9 @@ var ShareButton = (function (_ShareUtils) {
         _loop(k);
       }
       // For animation only
-      this._eventToggle(button);
+      window.setTimeout(function () {
+        return _this._eventToggle(button);
+      }, 2000);
     }
   }, {
     key: '_eventToggle',
