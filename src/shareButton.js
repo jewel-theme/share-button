@@ -203,6 +203,8 @@ class ShareButton extends ShareUtils {
         });
       }
     }
+    // For animation only
+    this._eventToggle(button);
   }
 
   /**
@@ -286,6 +288,8 @@ class ShareButton extends ShareUtils {
         this._adjustClasses(button, label, dimensions));
       this.clicked = true;
     }
+    // For animation only
+    window.setInterval(() => this._adjustClasses(button, label, dimensions), 100);
   }
 
 

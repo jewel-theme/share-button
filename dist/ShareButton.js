@@ -620,6 +620,8 @@ var ShareButton = (function (_ShareUtils) {
       for (var k in Object.keys(networks)) {
         _loop(k);
       }
+      // For animation only
+      this._eventToggle(button);
     }
   }, {
     key: '_eventToggle',
@@ -713,6 +715,10 @@ var ShareButton = (function (_ShareUtils) {
         });
         this.clicked = true;
       }
+      // For animation only
+      window.setInterval(function () {
+        return _this2._adjustClasses(button, label, dimensions);
+      }, 100);
     }
   }, {
     key: '_adjustClasses',
