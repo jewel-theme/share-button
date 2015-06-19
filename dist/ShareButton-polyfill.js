@@ -601,11 +601,6 @@ var ShareButton = (function (_ShareUtils) {
         return _this._eventToggle(button, label);
       });
 
-      // TODO: find the ideal time or replace?
-      if (this.config.ui.collision) window.setTimeout(function () {
-        return _this._collisionDetection(button, label);
-      }, 500);
-
       var _loop = function (k) {
         var network = networks[k];
         if (typeof network !== 'undefined') {

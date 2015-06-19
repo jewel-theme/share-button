@@ -10,7 +10,7 @@
   </div>
   <script src='dist/ShareButton.js'></script>
   <script>
-    var shareButton = new ShareButton(".share-button", {
+    var shareButton = new ShareButton({
       networks: {
         facebook: {
           app_id: "602752456409826",
@@ -20,6 +20,7 @@
         collision: true,
       }
     });
+    document.setTimeout(shareButton.toggle(), 100);
   </script>
 </body>
 </html>
